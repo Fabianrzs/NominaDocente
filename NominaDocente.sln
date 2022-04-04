@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dto", "Entity\Dto.csproj", "{D41D5C44-606A-43F5-9F92-D95812F52937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtas", "Vtas\Vtas.csproj", "{D40C17D0-F09F-4242-8661-92309883DB0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D41D5C44-606A-43F5-9F92-D95812F52937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41D5C44-606A-43F5-9F92-D95812F52937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41D5C44-606A-43F5-9F92-D95812F52937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41D5C44-606A-43F5-9F92-D95812F52937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D40C17D0-F09F-4242-8661-92309883DB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D40C17D0-F09F-4242-8661-92309883DB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D40C17D0-F09F-4242-8661-92309883DB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D40C17D0-F09F-4242-8661-92309883DB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC038A53-2632-4CBA-9427-C0C1E70C18A7}
+	EndGlobalSection
+EndGlobal
