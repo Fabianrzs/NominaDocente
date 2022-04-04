@@ -20,6 +20,17 @@ namespace Vtas
             db = new DocenteContext();
         }
 
+        private void LimpiarCampos(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is TextBox) c.Text = "";
+                if (c.Controls.Count > 0) LimpiarCampos(c);
+            }
+            textBox1.Focus();
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -42,6 +53,8 @@ namespace Vtas
             MessageBox.Show($"Su nomina esta determinada por {docente.Nomina}");
 
             db.GuardarDocente(docente);
+
+            LimpiarCampos(this);
 
             
         }
