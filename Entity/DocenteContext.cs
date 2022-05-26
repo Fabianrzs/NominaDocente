@@ -15,7 +15,7 @@ namespace Entity
         public DocenteContext()
         {
             _connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;" +
-                "AttachDbFilename=C:\\Users\\WIN10\\Desktop\\NominaDocente\\Entity\\Database1.mdf;" +
+                "AttachDbFilename=C:\\Users\\JEISON\\source\\repos\\NominaDocente\\Entity\\Database1.mdf;" +
                 "Integrated Security=True;Trusted_Connection = True; MultipleActiveResultSets = True");
         }
 
@@ -27,9 +27,9 @@ namespace Entity
                 using (var command = _connection.CreateCommand())
                 {
                     command.CommandText = "INSERT INTO DOCENTES (Identificacion, Nombres, TipoDocente, " +
-                        "AreaDesempenio,Categoria,Salario,Nomina)" +
+                        "AreaDesempenio,Categoria,Salario,Nomina,AreaInvestigacion)" +
                         "Values (@Identificacion, @Nombres, @TipoDocente, " +
-                        "@AreaDesempenio, @Categoria, @Salario, @Nomina )";
+                        "@AreaDesempenio, @Categoria, @Salario, @Nomina, @AreaInvestigacion )";
                     command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = docente.Identificacion;
                     command.Parameters.Add("@Nombres", SqlDbType.VarChar).Value = docente.Nombres;
                     command.Parameters.Add("@TipoDocente", SqlDbType.VarChar).Value = docente.TipoDocente;
@@ -37,6 +37,7 @@ namespace Entity
                     command.Parameters.Add("@Categoria", SqlDbType.VarChar).Value = docente.Categoria;
                     command.Parameters.Add("@Salario", SqlDbType.Decimal).Value = docente.Salario;
                     command.Parameters.Add("@Nomina", SqlDbType.Decimal).Value = docente.Nomina;
+                    command.Parameters.Add("@AreaInvestigacion", SqlDbType.VarChar).Value = docente.AreaInvestigacion;
 
                     command.ExecuteNonQuery();
                 }
@@ -90,6 +91,7 @@ namespace Entity
                 Categoria = (string)dataReader["Categoria"],
                 Salario = (decimal)dataReader["Salario"],
                 Nomina = (decimal)dataReader["Nomina"],
+                AreaInvestigacion = (string)dataReader["AreaInvestigacion"]
             };
         }
     }
