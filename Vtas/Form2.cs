@@ -40,12 +40,14 @@ namespace Vtas
                 Nombres = textBox2.Text,
                 TipoDocente = comboBox1.Text,
                 AreaDesempenio = comboBox2.Text,
-                Categoria = comboBox3.Text 
+                Categoria = comboBox3.Text,
+                AreaInvestigacion = comboBox4.Text
 
             };
 
             docente.CalcularSalario();
             docente.CalcularNomina();
+            docente.CalcularVinculacionProyecto();
 
             textBox3.Text = docente.Salario.ToString();
 
