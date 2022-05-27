@@ -135,6 +135,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(261, 416);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(171, 23);
             this.textBox3.TabIndex = 13;
             // 
@@ -206,7 +207,7 @@
             "A",
             "B",
             "C",
-            "Colciencia",
+            "Colciencias",
             "Semillero"});
             this.comboBox4.Location = new System.Drawing.Point(261, 370);
             this.comboBox4.Name = "comboBox4";
