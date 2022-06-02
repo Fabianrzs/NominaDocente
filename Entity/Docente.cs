@@ -91,7 +91,7 @@ namespace Entity
                     Nomina = Salario + (Salario * 0.19m);
                     break;
                 default:
-                    Nomina = 0.0m;
+                    Nomina += 0.0m;
                     break;
             }
         }
